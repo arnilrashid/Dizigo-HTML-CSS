@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: var(--primary-font);
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    /* font import */
+    /* credit: www.fontshare.com (“Fontshare”) */
+    font-family: 'Satoshi-Variable';
+    src: url('assets/fonts/Satoshi-Variable.woff2') format('woff2'),
+         url('assets/fonts/Satoshi-Variable.woff') format('woff'),
+         url('assets/fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+/* variables */
+:root {
+    /* text */
+    --primary-font: 'Satoshi-Variable', sans-serif;
+    /* colors */
+    --primary-color: #DCE764;
+    --black-color: #191919;
+    --white-color: #FFFFFF;
+    --off-white-color: #FDF6F0;
+    --orrange-color: #FFAA00;
+    --cyan-color: #E2F8F8;
+    --dark-ash-color: #22242F;
+    --light-green-color: #E3F3E4;
+    --light-gray-color: #D7C8C8;
+    --light-blue-color: #E9E7FF;
+}
+
+/* heading, paragraphs & buttons */
+h1 {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+h3 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+h4 {
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.primary_button {
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.secondary_button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 10px 30px;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+}
+
+/* 👨‍💻💻📱📡🌐🔍🧩📟🖥️🖱️⌨ */
+
+/* hero */
+.hero {
+    background-image: url(assets/images/background_1.1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1002px;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.hero .top-bar {
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 29px;
+}
+
+.hero .top-bar .nav {
+    width: 517px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .top-bar > a {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.hero .top-bar .nav .arrow_image {
+    display: flex;
+    align-items: center;
+}
+
+.hero .top-bar .nav .arrow_image img {
+    margin-left: 7px;
+}
+
+/* hero-main-section */
+.hero .hero_main {
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    margin: 170px auto 0 auto;
+}
+
+.hero .hero_main h6 {
+    margin-top: 38px;
+    margin-bottom: 48px;
+    color: var(--light-gray-color);
+}
+
+.hero .title_description {
+    color: var(--white-color);
+    width: 648px;
+}
+
+.hero .hero-right > img {
+    border-top-left-radius: 200px;
+}
+
+.hero-right {
+    position: relative;
+}
+
+.hero .title_description .secondary_button {
+    margin-left: 15px;
+}
+
+.hero .title_description a > img {
+    margin-right: 10px;
+}
+
+.hero_main .companystat {
+    display: flex;
+    margin-top: 80px;
+}
+
+.hero_main .companystat p {
+    color: var(--light-gray-color);
+}
+
+.hero_main .companystat .row {
+    display: flex;
+    align-items: center;
+}
+
+.hero_main .companystat .row .line {
+    height: 0.5px;
+    width: 227px;
+    background-color: #564C4C;
+    opacity: 30%;
+    margin-left: 19px;
+}
+
+.hero .title_description h4 {
+    margin-top: 26px;
+    margin-bottom: 15px;
+}
+
+.hero .col-two {
+    margin-left: 48px;
+}
+
+.hero .hero_main .shapes svg {
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+}
+
+/* hero section close */
+
+/* why choose section */
+.why-choose {
+    width: 1096px;
+    margin: 142px auto 0 auto;
+}
+
+.why-choose .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 87px;
+}
+
+.why-choose .title p {
+    color: #564C4C;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.why-choose .title h2 {
+    text-align: center;
+    margin-bottom: 87px;
+}
+
+.why-choose .why-choose_cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.why-choose .card {
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.why-choose_cards .business-grow .background {
+    background-color: var(--cyan-color);
+    border-radius: 5px;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-choose_cards .automation .background {
+    background-color: var(--light-green-color);
+    border-radius: 5px;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-choose_cards .cost-effective .background {
+    background-color: var(--light-blue-color);
+    border-radius: 5px;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-choose .why-choose_cards p {
+    color: #564C4C;
+}
+.why-choose .why-choose_cards h4 {
+    margin-top: 27px;
+    margin-bottom: 13px;
+}
+/* why choose section end */
+
+/* who we are section */
+.who_we_are {
+    width: 1320px;
+    display: flex;
+    margin: 142px auto 126px auto;
+    justify-content: space-between;
+}
+.who_we_are_card {
+    width: 648px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.who_we_are_card > p:first-of-type {
+    font-weight: 500;
+    line-height: 28px;
+}
+.who_we_are_card h2 {
+    margin: 16px 0 18px 0;
+}
+.who_we_are_card p {
+    color: #564C4C;
+}
+.who_we_are .bullets .bullet {
+    display: flex;
+    margin: 19px 0;
+}
+.who_we_are .bullets .bullet img {
+    margin-right: 15.47px;
+}
+.who_we_are .bullets {
+    margin-top: 9px;
+}
+.who_we_are .btn {
+    margin-top: 22px;
+}
+.who_we_are .btn img {
+    margin-left: 10px;
+}
+/* who we are section end */
+.services {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 142px 300px 150px 300px;
+    background-color: var(--black-color);
+}
+.services h2, .services h3, .services h4, .services a {
+    color: var(--white-color);
+}
+.services p {
+    color: var(--light-gray-color);
+}
+.services .title {
+    margin-top: 142px auto 73px auto;
+    text-align: center;
+}
+.services .title p {
+    color: #DCE764;
+    font-weight: 500;
+    line-height: 28px;
+}
+.services .service {
+    display: flex;
+    align-items: center;
+}
+.services .description {
+    width: 572px;
+}
+.services .shape {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardone.service > img:nth-of-type(1) {
+    margin: 0 161px 0 188px;
+}
+.cardtwo.service > img:nth-of-type(1) {
+    margin: 0 161px 0 188px;
+}
+
+.cardthree.service > img:nth-of-type(1) {
+    margin: 0 141px 0 174px;
+}
+.cardfour.service > img:nth-of-type(1) {
+    margin: 0 161px 0 179px;
+}
+
+.services .service .shape_circle {
+    height: 80px;
+    width: 80px;
+    border: 2px solid var(--light-gray-color);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 108px;
+}
+.services .active {
+    background-color: #DCE764;
+}
+.cardone {
+    margin-top: 73px;
+    padding-bottom: 61px;
+    border-bottom: 1px solid rgba(86, 77, 77, 0.5);
+}
+.cardtwo {
+    margin-top: 60px;
+    padding-bottom: 61px;
+    border-bottom: 1px solid rgba(86, 77, 77, 0.5);
+}
+
+.cardthree {
+    margin-top: 43px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid rgba(86, 77, 77, 0.5);
+}
+.cardfour {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.services .btn {
+    display: flex;
+    justify-content: center;
+}
