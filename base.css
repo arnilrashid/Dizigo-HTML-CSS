@@ -121,7 +121,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     height: 1002px;
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -347,10 +347,13 @@ a {
 
 /* service section */
 .services {
+    width: 100%;
+    background-color: var(--black-color);
+}
+.services_container {
     width: 1920px;
     margin: 0 auto;
     padding: 142px 300px 150px 300px;
-    background-color: var(--black-color);
 }
 .services h2, .services h3, .services h4, .services a {
     color: var(--white-color);
